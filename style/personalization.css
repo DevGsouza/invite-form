@@ -1,0 +1,150 @@
+.radio-colors {
+  grid-template-columns: repeat(11, 1fr);
+  margin-bottom: 1.25rem;
+
+  .radio-color {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #2D3136;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    div {
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+    }
+
+    &:has(:checked) {
+      border: 2px solid #59B2FF;
+    }
+
+  }
+
+}
+
+.radio-color:hover {
+  background-color: #383D42;
+}
+
+.radio-color input[type="radio"] {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  inset: 0;
+}
+
+
+.label-color,
+.label-theme {
+  font: var(--body-sm);
+  color: var(--text-body);
+  margin-block: 1rem;
+}
+
+.theme-radio {
+  width: 100%;
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.7rem, 1fr));
+  gap: 1rem;
+  margin-block: 1.25rem;
+}
+
+.theme {
+  position: relative;
+  background-color: #2D3136;
+  padding: 4px;
+  border-radius: .5rem;
+  text-align: center;
+
+  input {
+    position: absolute;
+  }
+
+  &:has(:checked) {
+    border: 2px solid #59B2FF;
+  }
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: .5rem;
+  }
+}
+
+.theme:hover {
+  background-color: #383D42;
+}
+
+
+/*file-styles*/
+
+.style-file {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1.25rem;
+}
+
+.styles {
+  position: relative;
+  min-height: 3rem;
+  margin-top: 1.25rem;
+  display: flex;
+
+  input[type="checkbox"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked~.style-name .light {
+    display: inline;
+  }
+
+  input[type="checkbox"]:checked~.style-name .dark {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked~.image-style {
+    background-image: url(../components/icons/light.svg);
+  }
+
+  .image-style {
+    background-image: url(../components/icons/dark.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
+
+.style-name {
+
+  font: var(--body-sm);
+  color: var(--text-heading);
+
+  .dark {
+    position: absolute;
+    inset: 0;
+    left: 45%;
+    top: calc(25% - .4rem);
+  }
+
+  .light {
+    display: none;
+    position: absolute;
+    inset: 0;
+    left: 45%;
+    top: calc(25% - .4rem);
+  }
+}

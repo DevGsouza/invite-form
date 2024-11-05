@@ -1,0 +1,41 @@
+.check {
+  display: flex;
+  gap: .8rem;
+  font: var(--body-sm);
+  color: #C8CDD0;
+  position: relative;
+  align-items: center;
+  margin-block: 1.25rem;
+
+  &:has(:checked) {
+    border: none;
+
+    .check-image {
+      background-image: url(../components/icons/square.svg);
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #59B2FF;
+  }
+
+}
+
+.check {
+  .check-image {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url(../components/icons/squareCheck.svg);
+  }
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}

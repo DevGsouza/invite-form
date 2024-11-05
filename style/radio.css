@@ -1,0 +1,98 @@
+.radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: .5rem;
+
+}
+
+.border {
+  border-radius: .5rem;
+  background-color: #1C1F21;
+  border: 1px solid #363B40;
+  grid-template-columns: auto auto;
+  height: 2.6rem;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+
+  .input-presencial {
+    background-color: #363B40;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 2px;
+
+    span {
+      font-weight: 600;
+    }
+
+    .presencial-image {
+      background-image: url(../components/icons/building.svg);
+    }
+
+  }
+
+  .input-online,
+  .input-presencial {
+    align-items: center;
+    gap: .5rem;
+    color: #C8CDD0;
+    justify-content: center;
+  }
+
+  &:has(:checked) {
+    .input-presencial {
+      background-color: #1C1F21;
+    }
+
+    .presencial-image {
+      background-image: url(../components/icons/building-2.svg);
+    }
+
+    .input-online {
+      background-color: #363B40;
+      height: 90%;
+      border-radius: 5px;
+      margin-right: 2px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .online-image {
+      background-image: url(../components/icons/video-2.svg);
+    }
+
+  }
+
+
+}
+
+.border input[type="checkbox"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.presencial-image {
+  background-image: url(../components/icons/building-2.svg);
+  width: 1rem;
+  height: 1rem;
+
+}
+
+.online-image {
+  background-image: url(../components/icons/video.svg);
+  width: 1rem;
+  height: 1rem;
+}

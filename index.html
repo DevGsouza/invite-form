@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Convite</title>
+  <link rel="stylesheet" href="./style/index.css">
+
+
+</head>
+
+<body>
+  <div id="sections">
+
+    <aside>
+      <div class="containerAside">
+        <div class="contentAside">
+          <img src="./components/icons/iconfesta.svg" alt="icone de fogo de artificio">
+          <h1 class="font-logo">Festivite</h1>
+          <p class="body-md text-heading">Crie convite digital para o seu evento</p>
+        </div>
+        <img class="cake" src="./components/images/cake.jpg" alt="imagem de um bolo com uma vela">
+      </div>
+    </aside>
+
+    <main>
+      <div class="containerMain">
+        <h1 class="text-heading">Crie seu convite</h1>
+
+        <form action="">
+
+          <fieldset>
+            <legend class="flex">
+              <img src="./components/icons/calendar.svg" alt="icone de calendario">
+              Sobre o evento
+            </legend>
+            <div class="input-wrapper grid">
+              <label for="event-name">Título do Evento</label>
+              <input type="text" id="event-name" placeholder="Nome do evento">
+            </div>
+
+            <div class="input-columns grid">
+              <div class="input-wrapper grid">
+                <label for="event-start">Início</label>
+                <input type="datetime-local" id="event-start" placeholder="DD/MM/AAAA, --:--">
+              </div>
+
+              <div class="input-wrapper grid">
+                <label for="event-end">Fim</label>
+                <input type="datetime-local" id="event-end" placeholder="DD/MM/AAAA, --:--">
+              </div>
+            </div>
+
+            <div class="input-wrapper grid radio">
+              <div class="input-wrapper grid">
+                <label for="">Tipo</label>
+
+                <div class="grid border">
+                  <input type="checkbox" name="event-type">
+                  <div class="input-presencial flex">
+                    <div class="presencial-image"></div>
+                    <span class="body-md">Presencial</span>
+                  </div>
+
+                  <div class="input-online flex">
+                    <div class="online-image"></div>
+                    <span class="body-md">Online</span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="input-wrapper grid">
+                <label for="event-local">Local</label>
+                <input type="text" id="event-local" placeholder="Link ou endereço">
+              </div>
+
+            </div>
+
+            <div class="textarea">
+              <label for="event-description">Descrição</label>
+              <textarea name="event-description" id="event-description" cols="30" rows="10"
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="flex">
+              <img src="./components/icons/brush.svg" alt="icone de pincel">
+              Personalização
+            </legend>
+            <div class="grid">
+              <label class="label-color">
+                Cor Principal
+              </label>
+
+              <div class=" radio-colors grid">
+                <div class="radio-color">
+                  <label for="event-color">
+                    <div class="blueOne"></div>
+                    <input type="radio" name="event-color" id="event-color">
+                  </label>
+                </div>
+                <div class="radio-color">
+                  <div class="purpleOne"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="purpleTwo"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="purpleThree"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="pinkOne"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="orangeOne"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="orangeTwo"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="yellowOne"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="yellowTwo"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="greenOne"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+                <div class="radio-color">
+                  <div class="greenTwo"></div>
+                  <input type="radio" name="event-color" id="event-color">
+                </div>
+              </div>
+            </div>
+
+            <label class="label-color" for="event-theme">Tema do evento</label>
+            <div class="theme-radio">
+              <div class="themes">
+                <div class="theme grid">
+                  <img src="./components/images/birthday.jpg" alt="bolo de aniversário">
+                  <label for="event-theme">
+                    Aniversário
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/childish.jpg" alt="itens de aniversário de criança">
+                  <label for="event-theme">
+                    Infantil
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/graduation.jpg" alt="roupa de formatura">
+                  <label for="event-theme">
+                    Formatura
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/marriage.jpg" alt="anéis de casamento">
+                  <label for="event-theme">
+                    Casamento
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/baby shower.jpg" alt="foto de uma fralda com um flor ao lado">
+                  <label for="event-theme">
+                    Chá de bebê
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/bridal shower.jpg" alt="foto de uma cozinha">
+                  <label for="event-theme">
+                    Chá de panela
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/carnival.jpg" alt="confetes de carnaval">
+                  <label for="event-theme">
+                    Carnaval
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/easter.jpg" alt="foto de ovo com orelha de coelho">
+                  <label for="event-theme">
+                    Páscoa
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/saintJohn.jpg" alt="bandeiras de são joão">
+                  <label for="event-theme">
+                    São joão
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/halloween.jpg" alt="aboboras de halloween">
+                  <label for="event-theme">
+                    Halloween
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/christmas.jpg" alt="caixas de presente de natal">
+                  <label for="event-theme">
+                    Natal
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+                <div class="theme grid">
+                  <img src="./components/images/others.jpg" alt="pessoas segurando copo juntas e brindando">
+                  <label for="event-theme">
+                    Outro
+                  </label>
+                  <input type="radio" name="event-theme">
+                </div>
+
+              </div>
+
+              <div class="style-file">
+                <div>
+                  <label class="label-color" for="event-style">Estilo</label>
+                  <div class="styles">
+                    <input type="checkbox" name="event-style">
+                    <div class="image-style"></div>
+                    <div class="style-name">
+                      <span class="dark">Escuro</span>
+                      <span class="light">Claro</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="files flex">
+                  <div>
+                    <label class="label-color" for="event-style">Foto de capa</label>
+                    <div class="file">
+                      <img src="./components/icons/upload.svg" alt="">
+                      Selecionar
+                      <input type="file" placeholder="Selecionar">
+                    </div>
+                  </div>
+                  <span>Nenhum arquivo selecionado</span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="flex">
+              <img src="./components/icons/contact.svg" alt="icone de contato">
+              Dados para contato
+            </legend>
+
+            <div class=" contact input-wrapper grid">
+              <label for="event-name">Nome</label>
+              <input type="text" id="event-name" required minlength="3" placeholder="Nome completo">
+
+              <div class="erro">
+                <img src="./components/icons/circle-alert.svg" alt="circulo de alerta">
+                <small class="heading6">Campo obrigatório</small>
+              </div>
+
+              <div class="input-columns grid">
+                <div class="input-wrapper grid">
+                  <label for="event-start">E-mail</label>
+                  <input type="email" id="event-start" placeholder="exemplo@email.com">
+                </div>
+
+                <div class="input-wrapper grid">
+                  <label for="event-end">Telefone</label>
+                  <input type="text" id="event-end" placeholder="(99) 99999-9999">
+                </div>
+              </div>
+
+              <div class="line"></div>
+
+            </div>
+          </fieldset>
+
+          <div class="check">
+            <div class="check-image"></div>
+            <input type="checkbox">
+            <p>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>
+            </p>
+          </div>
+
+          <div class="check">
+            <div class="check-image"></div>
+            <input type="checkbox">
+            <p>Aceito receber atualizações e promoções por e-mail</p>
+          </div>
+
+          <div class="check">
+            <div class="check-image"></div>
+            <input type="checkbox">
+            <p>Aceito receber atualizações e promoções por SMS</p>
+          </div>
+
+
+          <button>
+            <img src="./components/icons/ticket.svg" alt="icone de ticket">
+            Gerar Convite
+          </button>
+        </form>
+
+
+      </div>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

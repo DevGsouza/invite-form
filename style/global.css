@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+  /*variáveis de fonte*/
+
+  --leckerli-one: 'Leckerli One', sans-serif;
+  --baloo-two: 'Baloo 2', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+
+  --font-logo: 400 2.5rem/120%var(--leckerli-one);
+
+  --heading-md: 700 1.75rem/120%var(--baloo-two);
+  --heading-sm: 700 1.125rem/120%var(--baloo-two);
+
+  --body-md: 400 1rem/120%var(--open-sans);
+  --body-sm: 400 0.875rem/120%var(--open-sans);
+  --body-xs: 400 0.75rem/120%var(--open-sans);
+
+  /*color font*/
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+  --color-error: #FF5959;
+  --color-link: #59B2FF;
+
+  /*radios color*/
+
+  --blue-one: #59B2FF;
+  --purpleOne: #6A59FF;
+  --purpleTwo: #B259FF;
+  --purpleThree: #FF59F9;
+  --pinkOne: #FF598B;
+  --orangeOne: #FF5959;
+  --orangeTwo: #FF8B59;
+  --yellowOne: #FFCD59;
+  --yellowTwo: #E1FF59;
+  --greenOne: #59FF91;
+  --greenTwo: #59FFF9;
+}
+
+#sections {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: #131516;
+  height: 100vh;
+  min-width: 93.75rem;
+  padding-right: 2rem;
+}
+
+fieldset+fieldset {
+  margin-top: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+  padding: .8rem;
+  background-color: #1D6FB6;
+
+  border: none;
+  border-radius: .5rem;
+
+  color: #F9F9F9;
+  font: var(--body-md);
+
+  display: flex;
+  gap: .5rem;
+  position: absolute;
+  right: 0;
+}
+
+button:hover {
+  background-color: #3487CF;
+}

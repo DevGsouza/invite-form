@@ -1,0 +1,77 @@
+/* classes para fontes */
+
+.semiBold {
+  font-weight: 600;
+}
+
+.font-logo {
+  font: var(--font-logo);
+}
+
+.body-md {
+  font: var(--body-md);
+}
+
+
+/* color fonts */
+
+.text-heading {
+  color: var(--text-heading);
+}
+
+/* layout */
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/*radio-color*/
+
+.blueOne {
+  background-color: var(--blue-one);
+}
+
+.purpleOne {
+  background-color: var(--purpleOne);
+}
+
+.purpleTwo {
+  background-color: var(--purpleTwo);
+}
+
+.purpleThree {
+  background-color: var(--purpleThree);
+}
+
+.pinkOne {
+  background-color: var(--pinkOne);
+}
+
+.orangeOne {
+  background-color: var(--orangeOne);
+}
+
+.orangeTwo {
+  background-color: var(--orangeTwo);
+}
+
+.yellowOne {
+  background-color: var(--yellowOne);
+
+}
+
+.yellowTwo {
+  background-color: var(--yellowTwo);
+}
+
+.greenOne {
+  background-color: var(--greenOne);
+}
+
+.greenTwo {
+  background-color: var(--greenTwo);
+}

@@ -1,0 +1,26 @@
+.erro {
+  color: #FF5959;
+  font: var(--body-xs);
+  display: flex;
+  gap: 4px;
+  margin-top: 5px;
+
+  img,
+  small {
+    display: none;
+  }
+}
+
+.contact {
+
+  input[type="text"]:focus:invalid+.erro small,
+  input[type="text"]:focus:invalid+.erro img {
+    display: inline;
+  }
+
+}
+
+.line {
+  border-top: 1px solid #363B40;
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,70 @@
+.input-wrapper {
+  margin-bottom: .625rem;
+
+
+  input {
+    border: 1px solid #363B40;
+    background-color: #1C1F21;
+    padding: .675rem;
+    border-radius: .5rem;
+
+    font: var(--body-md);
+    color: #869198;
+
+  }
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-bottom: 1rem;
+
+  }
+}
+
+input [type="datetime-local"] {
+  appearance: none;
+}
+
+.textarea {
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+
+  }
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1rem;
+  padding: .675rem;
+
+  border-radius: .5rem;
+  border: 1px solid #363B40;
+  background-color: #1C1F21;
+
+  font: var(--body-md);
+  color: #869198;
+
+  input {
+    width: 100%;
+  }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="datetime-local"]:focus,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="datetime-local"]:hover,
+select:hover,
+textarea:hover,
+select:focus,
+textarea:focus {
+  outline: 1px solid #59B2FF;
+
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.8;
+}

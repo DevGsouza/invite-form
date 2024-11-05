@@ -1,0 +1,31 @@
+.files {
+  gap: 2rem;
+  position: relative;
+
+  span {
+    position: relative;
+    top: 50%;
+    font: var(--body-md);
+    color: #869198;
+  }
+}
+
+.file {
+  position: relative;
+  margin-top: 1.25rem;
+  background-color: #2D3136;
+  width: 8rem;
+  padding: .5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+
+  font: var(--body-sm);
+  color: var(--text-heading);
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

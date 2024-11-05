@@ -1,0 +1,38 @@
+main {
+  height: 85vh;
+  max-width: 100%;
+  border-radius: .5rem;
+  padding: 5rem;
+  margin-top: 5.625rem;
+  overflow: auto;
+  background-color: #212427;
+
+  h1 {
+    font: var(--heading-md);
+    margin-bottom: 2.5rem;
+  }
+
+  .containerMain {
+    max-width: 40rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+}
+
+fieldset {
+  border: none;
+
+  legend {
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+    font: var(--heading-sm);
+    color: var(--text-heading);
+  }
+}
+
+.input-columns {
+  grid-template-columns: auto auto;
+  gap: .5rem;
+  margin-top: 1.25rem;
+}
